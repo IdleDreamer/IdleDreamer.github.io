@@ -1,16 +1,164 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Idle Dreamer Projects</title>
-    <link href="style.css" rel="stylesheet"/>
-<!-- <link rel="icon" href="/favicon.ico" /> -->
-  </head>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idle Dreamer Projects</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+</head>
 
 <body>
-  <h1>Hello World</h1>
-  <p>I'm hosted with GitHub Pages.</p>
+  <!-- Side nav -->
+  <nav class="side-nav white-on-dark" id="mySidebar">
+    <a href="#title1" onclick="closeNav()" class="nav-button">About</a>
+    <a href="#title2" onclick="closeNav()" class="nav-button">40K 8e List Builder</a>
+    <a href="#title3" onclick="closeNav()" class="nav-button">2D Game Engine</a>
+    <a href="#title4" onclick="closeNav()" class="nav-button">CodePen</a>
+  </nav>
+
+  <!-- Screen header-->
+  <header class="top-aligned white-on-dark">
+    <a href="javascript:void(0)" class="menu-button white-on-dark hide-large" onclick="openNav()">&#9776;</a>
+    <a href="https://idledreamer.github.io">
+      <div class="title">IdleDreamer</div>
+    </a>
+  </header>
+
+  <!-- Small screen nav open overlay -->
+  <div class="nav-overlay hide-large" onclick="closeNav()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="main-content">
+    <div>
+      <div class="anchor" id="title1"></div>
+      <h1>About</h1>
+
+      <p>
+        This page serves as a hub and overview for each of the projects that I am or have been working on that I wish 
+        to be publicly available or hosted.
+      </p>
+      <p>
+        Projects will be predominantly developed in JavaScript or TypeScript. JS because that is what I use at work, though 
+        I do come from the more type-strict background of C# and Java so TS has been more appealing of late.
+      </p>
+
+      <h2>Projects</h2>
+      <hr class="content-seperator">
+
+      <div class="anchor" id="title2"></div>
+      <h1>Warhammer 40K 8th Edition List Builder</h1>
+
+      <p class="status hold">Status: On Hold - Progresses only in occassional, short, and rapid bursts of motivation</p>
+
+      <p class="hold">
+        Currently this project is not getting any love as I haven't been playing 40K recently. Instead I've been trying
+        out the new Kill Teams which is rather enjoyable. And in this case the BattleScribe app does quite a nice job of
+        creating lists, so I have not felt the need to create my own.
+      </p>
+
+      <p>
+        I started this project for two reasons:
+        <ul>
+          <li>
+            Paging back and forth through multiple rule books composing your army and hoping that you got all of the
+            costs and special rules/dependencies correct is a real pain.
+          </li>
+          <li>
+            The list building applications that already exist are unstaisfactory (to me at least). The official app -
+            Command Roster -
+            is disgustingly under-featured and the best free contender - BattleScribe - is not the easiest/nicest to
+            use.
+          </li>
+        </ul>
+        So I decided to make my own web-based list builder. Originally this was planned to cater for all armies, however
+        once I got round to translating the rules for the factions I play (Craftworlds, Harlequins, and Ynnari) I realised just
+        how big of a task that would be. So, for now at least, this project will only support my factions, but should be able to support the
+        others if I ever get around to adding their data.
+      </p>
+
+      <div>
+        <img class="scalingImage" src="images/lb-screen1.jpg" />
+      </div>
+
+      <a href="https://idledreamer.github.io/40kListBuilder/">Try it now on GitHub Pages</a>
+
+      <hr class="content-seperator">
+
+      <div class="anchor" id="title3"></div>
+      <h1>2D Game Engine</h1>
+
+      <p class="status inprogress">Status: Started - Progressing Slowly</p>
+
+      <p>
+        This project is (as the title suggests) a 2D game engine. This seems to be a popular choice of project for
+        small teams and startups these days. This particular engine is intended to be used to create web-based games
+        and is being developed in TypeScript.
+      </p>
+      <p>
+        <i>Why would someone want a web-based game engine knowing the restrictions of the platform?</i><br/>
+        Honestly I've debated this with myself numerous times, however I keep settling back on web-based due to the appeal 
+        of accessibility and, to some degree, the challenge of seeing if I can make it work.
+      </p>
+      <p>
+        <i>If you just want to make games then why not just use one of the existing engines?</i><br/>
+        I am rather biased against using libraries and engines. Mostly because of the excess code that comes them that you 
+        never use, the extra processing that you might not be making use of but runs anyway. But also because I like to 
+        understand the code I'm using, so unless the code-base is small enough for me to read through and understand then I 
+        prefer to write it myself. That way I learn more as well.
+      </p>
+      <p>
+        Link to demo coming sometime <!-- TODO: add link to demo when available -->
+      </p>
+
+      <hr class="content-seperator">
+
+      <div class="anchor" id="title4"></div>
+      <h1>CodePen Account</h1>
+
+      <p class="status inprogress">Status: Ongoing</p>
+
+      <p>
+        I started using CodePen at one point to play around with some of the simpler physics challenges and 2d game mechanics.
+        For example the below code pen is a work-in-progress attempt at detecting and resolving collisions between different shapes:
+      </p>
+      <p data-height="535" data-theme-id="dark" data-slug-hash="JeGWJm" data-default-tab="js,result" data-user="cp-pens"
+        data-pen-title="2D Physics Module" class="codepen">See the Pen <a
+          href="https://codepen.io/cp-pens/pen/JeGWJm/">2D Physics Module</a> by Connor (<a
+          href="https://codepen.io/cp-pens">cp-pens</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+      <p></p>
+      <a href="https://codepen.io/cp-pens/" class="text-link button-link">My CodePen page</a>
+
+
+      <hr class="content-seperator">
+
+    </div>
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    var open = false;
+    function openNav() {
+      if (open === true) { this.closeNav(); }
+      else {
+        open = true;
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+    }
+
+    function closeNav() {
+      open = false;
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+  </script>
 </body>
 
 </html>

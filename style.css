@@ -28,10 +28,343 @@ html {
   background-color: #1b1b1b;
   font-family: Poppins;
   color: white;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #1b1b1b;
   margin: 0;
   padding: 0;
+}
+
+.white-on-dark {
+  color: #fff;
+  background-color: #303030;
+}
+
+.top-aligned {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+.text-link {
+  text-decoration: none;
+  color: #1778d5;
+}
+
+.text-link:visited {
+  color: #1778d5;
+}
+
+.button-link {
+  padding: 3px 6px 3px 6px;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  background-color: #222222;
+}
+
+.button-link:hover {
+  background-color: #BBBBBB;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+input[type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+input[type=submit] {
+  background-color: #1778d5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0e508f;
+}
+
+/* Header - must only display when screen is small */
+header {
+  font-size: 24px;
+  height: 50px;
+  border-bottom: 1px solid #4f4f4f;
+  position: fixed;
+  padding: 8px 16px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  display: inline-block;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  transition: margin-left .5s;
+  float: left;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  float: left
+}
+
+/* Side-nav - must not show on small screens until opened */
+.side-nav {
+  margin-top: 67px;
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  z-index: 3;
+  overflow: auto;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 32px 0;
+}
+
+.nav-button { 
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 8px 32px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  margin-left: 0;
+}
+
+.login {
+  color: #44be3f;
+}
+
+.logout {
+  color: #c33f3f;
+}
+
+.menu-button {
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: right;
+  margin-right: 25px;
+}
+
+.menu-button:hover {
+  color: #fff;
+  background-color: #1778d5;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  color: #fff;
+  background-color: #1778d5;
+  text-decoration: none;
+}
+
+/* Side-nav Overlay - displays on small screens only when side-nav is opened */
+.nav-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 67px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2
+}
+
+/* Page content */
+.main-content {
+  transition: margin-left .5s;
+  background-color: #1b1b1b;
+  color: #888888;
+  font-size: 15px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 80px;
+  margin-left: 270px;
+}
+
+.main-content h1 {
+  color: #cccccc;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.hold {
+  color: #a3872c;
+}
+
+.notstarted {
+  color: #c33f3f;
+}
+
+.inprogress {
+  color: #44be3f;
+}
+
+.complete {
+  color: #497fc1;
+}
+
+hr.content-seperator {
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0), rgba(128, 128, 128, 0.75), rgba(128, 128, 128, 0)) !important;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 48px;
+  color: #007ACC;
+  margin-bottom: 50px;
+}
+
+.scalingImage {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  min-width: 240px;
+}
+
+/* Image galleries */
+.selectedImageContainer {
+  width: 100%;
+  max-width: 900px;
+  background-color: black;
+  align-content: center;
+}
+
+.selectedImage {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.unselectedImageContainer {
+  width: 134px;
+  height: 100px;
+  background-color: black;
+  float: left;
+  margin: 5px 5px 5px 5px;
+}
+
+.unselectedImageContainer:hover {
+  border: 2px solid green;
+  cursor: pointer;
+  margin: 3px 3px 3px 3px;
+}
+
+.unselectedImage {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.undecoratedList {
+  list-style-type: none;
+  padding: 1px 0 150px 0;
+  max-width: 1000px;
+}
+
+.undecoratedList li {
+  margin: 0;
+  padding: 0;
+}
+
+
+footer {
+  margin-top: 80px;
+}
+
+b {
+  color: #DDDDDD;
+}
+
+/* Media (size) settings */
+@media (min-width:800px) {
+  .side-nav {
+      display: block !important;
+  }
+
+  .hide-large {
+      display: none !important;
+  }
+}
+
+@media (max-width:799px) {
+  .side-nav {
+      display: none;
+  }
+
+  .main-content {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+  }
+
+  .side-nav {
+      right: 0;
+  }
 }
