@@ -12,11 +12,11 @@
 <body>
   <!-- Side nav -->
   <nav class="side-nav white-on-dark" id="mySidebar">
-    <a href="#title1" onclick="closeNav()" class="nav-button">About</a>
-    <a href="#title2" onclick="closeNav()" class="nav-button">Nightwave TD</a>
-    <a href="#title3" onclick="closeNav()" class="nav-button">40K 8e List Builder</a>
-    <a href="#title4" onclick="closeNav()" class="nav-button">2D Game Engine</a>
-    <a href="#title5" onclick="closeNav()" class="nav-button">CodePen</a>
+    <a href="#about" onclick="closeNav()" class="nav-button">About</a>
+    <a href="#nightwave" onclick="closeNav()" class="nav-button">Night Wave TD</a>
+    <a href="#listbuilder" onclick="closeNav()" class="nav-button">40K 8e List Builder</a>
+    <a href="#codepen" onclick="closeNav()" class="nav-button">CodePen</a>
+    <a href="#gameengine" onclick="closeNav()" class="nav-button">Discarded Projects</a>
   </nav>
 
   <!-- Screen header-->
@@ -34,7 +34,7 @@
   <!-- !PAGE CONTENT! -->
   <div class="main-content">
     <div>
-      <div class="anchor" id="title1"></div>
+      <div class="anchor" id="about"></div>
       <h1>About</h1>
 
       <p>
@@ -50,25 +50,42 @@
       <hr class="content-seperator">
 
       <!-- Nightwave -->
-      <div class="anchor" id="title2"></div>
-      <h1>Nightwave Tower Defence</h1>
+      <div class="anchor" id="nightwave"></div>
+      <h1>Night Wave Tower Defence</h1>
 
-      <p class="status inprogress">Status: In Progress</p>
+      <p class="status complete">Status: Complete</p>
 
       <p>
-        A game that I am making in the Godot engine.<br/>
+        A game that Imade in the Godot engine.<br/>
         Nightwave is a tower defence game inspired by the Kingdom Rush games, sans the heroes.<br/>
-        The twist with this variation is that monsters are obscured by darkness and so the player must first buid towers that illuminate
+        The twist with this variation is that monsters are obscured by darkness and so the player must first build towers that illuminate
         the path so that other towers may shoot at them.
       </p>
 
       <br/>
-      <a href="nightwave/Nightwave.html" class="text-link button-link">Play it now</a>
+      <iframe frameborder="0" src="https://itch.io/embed/3023851?linkback=true&amp;border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=16c0fa&amp;border_color=363636" width="550" height="165"><a href="https://ficticious.itch.io/night-wave">Night Wave by Ficticious</a></iframe>
+
+      <hr class="content-seperator">
+
+      <!-- Soulsvania -->
+      <div class="anchor" id="soulsvania"></div>
+      <h1>Night Wave Tower Defence</h1>
+
+      <p class="status inprogress">Status: In progress</p>
+
+      <p>
+        A game that I am making in the Godot engine.<br/>
+        This is a 2D, souls-like, metroidvania, single player game set in a dark fantasy world.<br/>
+        Inspired by the likes of Hollow Knight and Salt & Sanctuary.
+      </p>
+
+      <br/>
+      <iframe frameborder="0" src="https://itch.io/embed/3023851?linkback=true&amp;border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=16c0fa&amp;border_color=363636" width="550" height="165"><a href="https://ficticious.itch.io/night-wave">Night Wave by Ficticious</a></iframe>
 
       <hr class="content-seperator">
 
       <!-- 40k list builder -->
-      <div class="anchor" id="title3"></div>
+      <div class="anchor" id="listbuilder"></div>
       <h1>Warhammer 40K 8th Edition List Builder</h1>
 
       <p class="status hold">Status: On Hold - Progresses only in occassional, short, and rapid bursts of motivation</p>
@@ -107,33 +124,8 @@
 
       <hr class="content-seperator">
 
-      <!-- 2d game engine -->
-      <div class="anchor" id="title4"></div>
-      <h1>2D Game Engine</h1>
-
-      <p class="status hold">Status: Started - Died</p>
-
-      <p>
-        This project is (as the title suggests) a 2D game engine. This seems to be a popular choice of project for
-        small teams and startups these days. This particular engine is intended to be used to create web-based games
-        and is being developed in TypeScript.
-      </p>
-      <p>
-        <i>Why would someone want a web-based game engine knowing the restrictions of the platform?</i><br/>
-        Honestly I've debated this with myself numerous times, however I keep settling back on web-based due to the appeal 
-        of accessibility and, to some degree, the challenge of seeing if I can make it work.
-      </p>
-      <p>
-        <i>If you just want to make games then why not just use one of the existing engines?</i><br/>
-        I am rather biased against using libraries and engines. Mostly because of the excess code that comes them that you 
-        never use, the extra processing that you might not be making use of but runs anyway. But also because I like to 
-        understand the code I'm using, so unless the code-base is small enough for me to read through and understand then I 
-        prefer to write it myself. That way I learn more as well.
-      </p>
-      <hr class="content-seperator">
-
       <!-- codepen -->
-      <div class="anchor" id="title5"></div>
+      <div class="anchor" id="codepen"></div>
       <h1>CodePen Account</h1>
 
       <p class="status inprogress">Status: Updated only when experimenting</p>
@@ -155,6 +147,35 @@
       <hr class="content-seperator">
 
     </div>
+
+    <!-- discarded projects -->
+    <div class="anchor" id="discarded"></div>
+    <h1>Discarded Projects</h1>
+
+    <p>
+      Every developer is going to have tons of discarded projects. I am no different. Some noteworthy examples in my case are:
+    </p>
+
+    <ul>
+      <li>
+        <b>2D game engine</b> - I attempted this a few times, first in JavaScript (what I use at work) and then again in TypeScript. 
+        I got quite far, developing from scratch a complete ECS architecture, asset management, audio manager, scene manager, etc. What 
+        I did not complete was the renderer or physics. At first I used the built in canvas renderer, but that is nowhere near good enough 
+        for games, so I started working on a custom WebGL2 renderer. I enjoyed myself so much that I decided to write a proepr 3D renderer 
+        instead. Which is where this project lost steam.
+      </li>
+      <li>
+        <b>3D game engine</b> - Once I learned how to use OpenGL I started working on a 3D game engine. This was done while following along 
+        with an excellent YouTube series by The Cherno that was teaching how to make a 2D game engine using C++ and OpenGL. I was planning to 
+        use that as a base and extend it to 3D. It ended up taking too long and the scope of what I was wanting to do made me decide it would 
+        be more worthwhile to use an existing engine if I actually wanted to create games before I retired.
+      </li>
+      <li>
+        <b>3D arena shooter</b> - Had an idea of a simple, parkour-based, multi-player shooter. Started development on that in Godot, but 
+        other projects became a priority and so I dropped it.
+      </li>
+    </ul>
+    <hr class="content-seperator">
     <!-- End page content -->
   </div>
 

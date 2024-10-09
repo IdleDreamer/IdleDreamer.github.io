@@ -258,11 +258,11 @@ header a {
 }
 
 .inprogress {
-  color: #44be3f;
+  color: #497fc1;
 }
 
 .complete {
-  color: #497fc1;
+  color: #44be3f;
 }
 
 hr.content-seperator {
