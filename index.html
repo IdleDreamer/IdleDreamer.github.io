@@ -13,7 +13,12 @@
   <!-- Side nav -->
   <nav class="side-nav white-on-dark" id="mySidebar">
     <a href="#about" onclick="closeNav()" class="nav-button">About</a>
+    <hr class="menu-seperator">
+    <h3 class="nav-header">Projects</h3>
+    <hr class="menu-seperator">
     <a href="#nightwave" onclick="closeNav()" class="nav-button">Night Wave TD</a>
+    <a href="#soulsvania" onclick="closeNav()" class="nav-button">Soulsvania</a>
+    <a href="#precisionplatformer" onclick="closeNav()" class="nav-button">Precision Platformer</a>
     <a href="#listbuilder" onclick="closeNav()" class="nav-button">40K 8e List Builder</a>
     <a href="#codepen" onclick="closeNav()" class="nav-button">CodePen</a>
     <a href="#gameengine" onclick="closeNav()" class="nav-button">Discarded Projects</a>
@@ -38,12 +43,20 @@
       <h1>About</h1>
 
       <p>
-        This page serves as a hub and overview for each of the projects that I am or have been working on that I wish 
-        to be publicly available or hosted.
+        This page serves as a hub and overview for each of the projects that I am or have been working on.
       </p>
       <p>
-        Projects will be predominantly developed in JavaScript or TypeScript. JS because that is what I use at work, though 
-        I do come from the more type-strict background of C# and Java so TS has been more appealing of late.
+        My primary focus for personal projects is game development as that is what I am passionate about. However, I have dabbled with 
+        tooling for other fields that I am interested in as well. See the 40K list builder application below as an example. I was initially 
+        working with JavaScript and TypeScript since I use JS at work. I attempted to create 2D game engines in both languages, 
+        ended up enjoying it too much to waste time creating such a tool that would ultimately under-perform due to language constraints, and 
+        so opted to restart in C# and OpenGL. This quickly led to a C++ and OpenGL restart, and then slowly the realisation that I would end 
+        up spending too many years creating a basic engine when I could just start making games with an existing one.
+      </p>
+      <p>
+        These days I primarily work with Godot. Being a free and open-source game engine means I can just experiment with it and figure out 
+        what I can do and how well I can do it wihtout having to worry about expenses until I feel I have something good enough to port to 
+        consoles.
       </p>
 
       <h2>Projects</h2>
@@ -69,14 +82,30 @@
 
       <!-- Soulsvania -->
       <div class="anchor" id="soulsvania"></div>
-      <h1>Unamed soulsvania platformer</h1>
+      <h1>Unamed Soulsvania Platformer</h1>
 
-      <p class="status inprogress">Status: In progress</p>
+      <p class="status hold">Status: On Hold</p>
 
       <p>
         A game that I am making in the Godot engine.<br/>
         This is a 2D, souls-like, metroidvania, single player game set in a dark fantasy world.<br/>
-        Inspired by the likes of Hollow Knight and Salt & Sanctuary.
+        Inspired by the likes of Hollow Knight and Salt & Sanctuary. <br/>
+        <br/>
+        Project is currently on hold while I work on the precision platformer mentioned below.
+      </p>
+
+      <hr class="content-seperator">
+
+      <!-- Precision platformer -->
+      <div class="anchor" id="precisionplatformer"></div>
+      <h1>Unamed Precision Platformer</h1>
+
+      <p class="status inprogress">Status: In Progress</p>
+
+      <p>
+        A game that I am making in the Godot engine.<br/>
+        This is a 2D platformer with a focus on platforming puzzles and speed.<br/>
+        This project's purpose is to refine my 2D movement system for the soulsvania project mentioned above.
       </p>
 
       <hr class="content-seperator">
@@ -85,14 +114,11 @@
       <div class="anchor" id="listbuilder"></div>
       <h1>Warhammer 40K 8th Edition List Builder</h1>
 
-      <p class="status hold">Status: On Hold - Progresses only in occassional, short, and rapid bursts of motivation</p>
+      <p class="status hold">Status: On Hold</p>
 
       <p class="hold">
-        Currently this project is not getting any love as I haven't been playing 40K. Instead I've been trying
-        out the new Kill Teams which is rather enjoyable. And in this case the BattleScribe app does quite a nice job of
-        creating lists, so I have not felt the need to create my own.
+        Currently this project is not getting any love as I haven't been playing 40K.
       </p>
-
       <p>
         I started this project for two reasons:
         <ul>

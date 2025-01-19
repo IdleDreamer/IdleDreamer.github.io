@@ -149,6 +149,14 @@ header a {
   padding: 32px 0;
 }
 
+.nav-header {
+  border: none;
+  outline: 0;
+  padding: 0px 32px;
+  color: #007ACC;
+
+}
+
 .nav-button { 
   border: none;
   display: inline-block;
@@ -272,6 +280,15 @@ hr.content-seperator {
   background-image: linear-gradient(to right, rgba(128, 128, 128, 0), rgba(128, 128, 128, 0.75), rgba(128, 128, 128, 0)) !important;
   margin-bottom: 60px;
   margin-top: 40px;
+}
+
+hr.menu-seperator {
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0), rgba(128, 128, 128, 0.75), rgba(128, 128, 128, 0)) !important;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 h2 {
