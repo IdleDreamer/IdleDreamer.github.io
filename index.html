@@ -1,230 +1,324 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ficticious Dev Projects</title>
+  <meta name="description" content="Portfolio of FicticiousDev - Game developer specializing in 2D platformers, tower defense, and indie games using Godot Engine. Explore my completed games, tools, and projects.">
+  <meta name="keywords" content="game development, portfolio, Godot, indie games, 2D platformer, tower defense">
+  <meta name="author" content="FicticiousDev">
+  <title>FicticiousDev - Game Developer Portfolio</title>
   <link href="style.css" rel="stylesheet" />
   <link rel="icon" href="favicon.ico" />
 </head>
 
-<body>
-  <!-- Side nav -->
-  <nav class="side-nav white-on-dark" id="mySidebar">
-    <a href="#about" onclick="closeNav()" class="nav-button">About</a>
-    <hr class="menu-seperator">
-    <h3 class="nav-header">Projects</h3>
-    <hr class="menu-seperator">
-    <a href="#nightwave" onclick="closeNav()" class="nav-button">Night Wave TD</a>
-    <a href="#soulsvania" onclick="closeNav()" class="nav-button">Soulsvania</a>
-    <a href="#precisionplatformer" onclick="closeNav()" class="nav-button">Precision Platformer</a>
-    <a href="#listbuilder" onclick="closeNav()" class="nav-button">40K 8e List Builder</a>
-    <a href="#codepen" onclick="closeNav()" class="nav-button">CodePen</a>
-    <a href="#gameengine" onclick="closeNav()" class="nav-button">Discarded Projects</a>
-  </nav>
-
-  <!-- Screen header-->
-  <header class="top-aligned white-on-dark">
-    <a href="javascript:void(0)" class="menu-button white-on-dark hide-large" onclick="openNav()">&#9776;</a>
-    <a href="https://ficticiousdev.github.io">
-      <div class="title">FicticiousDev</div>
-    </a>
+<body class="preload">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">FicticiousDev</div>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span>Theme</span>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
   </header>
 
-  <!-- Small screen nav open overlay -->
-  <div class="nav-overlay hide-large" onclick="closeNav()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
-
-  <!-- !PAGE CONTENT! -->
-  <div class="main-content">
-    <div>
-      <div class="anchor" id="about"></div>
-      <h1>About</h1>
-
-      <p>
-        This page serves as a hub and overview for each of the projects that I am or have been working on.
-      </p>
-      <p>
-        My primary focus for personal projects is game development as that is what I am passionate about. However, I have dabbled with 
-        tooling for other fields that I am interested in as well. See the 40K list builder application below as an example. I was initially 
-        working with JavaScript and TypeScript since I use JS at work. I attempted to create 2D game engines in both languages, 
-        ended up enjoying it too much to waste time creating such a tool that would ultimately under-perform due to language constraints, and 
-        so opted to restart in C# and OpenGL. This quickly led to a C++ and OpenGL restart, and then slowly the realisation that I would end 
-        up spending too many years creating a basic engine when I could just start making games with an existing one.
-      </p>
-      <p>
-        These days I primarily work with Godot. Being a free and open-source game engine means I can just experiment with it and figure out 
-        what I can do and how well I can do it wihtout having to worry about expenses until I feel I have something good enough to port to 
-        consoles.
-      </p>
-
-      <h2>Projects</h2>
-      <hr class="content-seperator">
-
-      <!-- Nightwave -->
-      <div class="anchor" id="nightwave"></div>
-      <h1>Night Wave Tower Defence</h1>
-
-      <p class="status complete">Status: Complete</p>
-
-      <p>
-        A game that I made in the Godot engine.<br/>
-        Nightwave is a tower defence game inspired by the Kingdom Rush games, sans the heroes.<br/>
-        The twist with this variation is that monsters are obscured by darkness and so the player must first build towers that illuminate
-        the path so that other towers may shoot at them.
-      </p>
-
-      <br/>
-      <iframe frameborder="0" src="https://itch.io/embed/3023851?linkback=true&amp;border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=16c0fa&amp;border_color=363636" width="550" height="165"><a href="https://ficticious.itch.io/night-wave">Night Wave by Ficticious</a></iframe>
-
-      <hr class="content-seperator">
-
-      <!-- Soulsvania -->
-      <div class="anchor" id="soulsvania"></div>
-      <h1>Unamed Soulsvania Platformer</h1>
-
-      <p class="status hold">Status: On Hold</p>
-
-      <p>
-        A game that I am making in the Godot engine.<br/>
-        This is a 2D, souls-like, metroidvania, single player game set in a dark fantasy world.<br/>
-        Inspired by the likes of Hollow Knight and Salt & Sanctuary. <br/>
-        <br/>
-        Project is currently on hold while I work on the precision platformer mention below.
-      </p>
-
-      <hr class="content-seperator">
-
-      <!-- There Be Spikes -->
-      <div class="anchor" id="precisionplatformer"></div>
-      <h1>There Be Spikes</h1>
-
-      <p class="status complete">Status: Complete</p>
-
-      <p>
-        A game that I made in the Godot engine.<br/>
-        This is a 2D platformer with a focus on platforming puzzles and speed.<br/>
-        This project's purpose is to refine my 2D movement system for the soulsvania project mentioned above. As well as an opportunity for 
-        me to attempt making every asset in the game (mostly achieved, only exceptions are a font and some button icons).
-      </p>
-
-      <br/>
-      <iframe frameborder="0" src="https://itch.io/embed/4213428?linkback=true&amp;border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=16c0fa&amp;border_color=363636" width="550" height="165"><a href="https://ficticious.itch.io/there-be-spikes">There Be Spikes by Ficticious</a></iframe>
-
-      <hr class="content-seperator">
-
-      <!-- 40k list builder -->
-      <div class="anchor" id="listbuilder"></div>
-      <h1>Warhammer 40K 8th Edition List Builder</h1>
-
-      <p class="status hold">Status: On Hold</p>
-
-      <p class="hold">
-        Currently this project is not getting any love as I haven't been playing 40K.
-      </p>
-      <p>
-        I started this project for two reasons:
-        <ul>
-          <li>
-            Paging back and forth through multiple rule books composing your army and hoping that you got all of the
-            costs and special rules/dependencies correct is a real pain.
-          </li>
-          <li>
-            The list building applications that already exist are unstaisfactory (to me at least). The official app -
-            Command Roster -
-            is disgustingly under-featured and the best free contender - BattleScribe - is not the easiest/nicest to
-            use.
-          </li>
-        </ul>
-        So I decided to make my own web-based list builder. Originally this was planned to cater for all armies, however
-        once I got round to translating the rules for the factions I play (Craftworlds, Harlequins, and Ynnari) I realised just
-        how big of a task that would be. So, for now at least, this project will only support my factions, but should be able to support the
-        others if I ever get around to adding their data.
-      </p>
-
-      <div>
-        <img class="scalingImage" src="images/lb-screen1.jpg" />
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-section">
+      <div class="nav-title">Navigation</div>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
       </div>
-      <br/>
-      <a href="https://idledreamer.github.io/40kListBuilder/" class="text-link button-link">Try it now on GitHub Pages</a>
-
-      <hr class="content-seperator">
-
-      <!-- codepen -->
-      <div class="anchor" id="codepen"></div>
-      <h1>CodePen Account</h1>
-
-      <p class="status inprogress">Status: Updated only when experimenting</p>
-
-      <p>
-        I started using CodePen at one point to play around with some of the simpler physics challenges and 2d game mechanics.
-        For example the below code pen is a work-in-progress attempt at detecting and resolving collisions between different shapes:
-      </p>
-      <p data-height="535" data-theme-id="dark" data-slug-hash="JeGWJm" data-default-tab="js,result" data-user="cp-pens"
-        data-pen-title="2D Physics Module" class="codepen">See the Pen <a
-          href="https://codepen.io/cp-pens/pen/JeGWJm/">2D Physics Module</a> by Connor (<a
-          href="https://codepen.io/cp-pens">cp-pens</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-      <p></p>
-      <a href="https://codepen.io/cp-pens/" class="text-link button-link">My CodePen page</a>
-
-
-      <hr class="content-seperator">
-
     </div>
+    
+    <div class="nav-section">
+      <div class="nav-title">Games</div>
+      <div class="nav-links">
+        <a href="#nightwave" class="nav-link">Night Wave TD</a>
+        <a href="#therebespikes" class="nav-link">There Be Spikes</a>
+        <a href="#dice" class="nav-link">Dice Rogue-lite</a>
+        <a href="#soulsvania" class="nav-link">Soulsvania</a>
+      </div>
+    </div>
+    
+    <div class="nav-section">
+      <div class="nav-title">Game Jams</div>
+      <div class="nav-links">
+        <a href="#lastlight" class="nav-link">Last Light</a>
+      </div>
+    </div>
+    
+    <div class="nav-section">
+      <div class="nav-title">Tools</div>
+      <div class="nav-links">
+        <a href="#listbuilder8e" class="nav-link">40K List Builder 8th</a>
+        <a href="#codepen" class="nav-link">CodePen</a>
+      </div>
+    </div>
+    
+    <div class="nav-section">
+      <div class="nav-title">Archive</div>
+      <div class="nav-links">
+        <a href="#shelved" class="nav-link">Shelved Projects</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- discarded projects -->
-    <div class="anchor" id="discarded"></div>
-    <h1>Discarded Projects</h1>
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero content-section">
+      <div class="anchor" id="about"></div>
+      <div class="hero-content">
+        <h1>Game Developer & Creative Technologist</h1>
+        <p class="hero-subtitle">
+          Passionate about creating engaging game experiences and innovative tools.
+        </p>
+        <p class="hero-description">
+          This portfolio showcases my journey in game development, primarily using the Godot engine. 
+          My focus is on creating polished, enjoyable experiences across various genres - from precision 
+          platformers to tower defense games. I believe in learning by doing, which is why you'll find 
+          a mix of completed projects, ongoing work, and experimental prototypes here.
+        </p>
+        <p class="hero-description">
+          After experimenting with building game engines from scratch in JavaScript, TypeScript, C#, and C++, 
+          I realized that my true passion lies in designing and creating games rather than engines. This led me to Godot, 
+          where I can focus on what matters most: crafting memorable gameplay experiences.
+        </p>
+      </div>
+    </section>
 
-    <p>
-      Every developer is going to have tons of discarded projects. I am no different. Some noteworthy examples in my case are:
-    </p>
+    <div class="section-divider"></div>
 
-    <ul>
-      <li>
-        <b>2D game engine</b> - I attempted this a few times, first in JavaScript (what I use at work) and then again in TypeScript. 
-        I got quite far, developing from scratch a complete ECS architecture, asset management, audio manager, scene manager, etc. What 
-        I did not complete was the renderer or physics. At first I used the built in canvas renderer, but that is nowhere near good enough 
-        for games, so I started working on a custom WebGL2 renderer. I enjoyed myself so much that I decided to write a proepr 3D renderer 
-        instead. Which is where this project lost steam.
-      </li>
-      <li>
-        <b>3D game engine</b> - Once I learned how to use OpenGL I started working on a 3D game engine. This was done while following along 
-        with an excellent YouTube series by The Cherno that was teaching how to make a 2D game engine using C++ and OpenGL. I was planning to 
-        use that as a base and extend it to 3D. It ended up taking too long and the scope of what I was wanting to do made me decide it would 
-        be more worthwhile to use an existing engine if I actually wanted to create games before I retired.
-      </li>
-      <li>
-        <b>3D arena shooter</b> - Had an idea of a simple, parkour-based, multi-player shooter. Started development on that in Godot, but 
-        other projects became a priority and so I dropped it.
-      </li>
-    </ul>
-    <hr class="content-seperator">
-    <!-- End page content -->
-  </div>
+    <!-- Games Section -->
+    <section class="content-section">
+      <div class="category-header">
+        <span class="category-icon">🎮</span>
+        <h2>Games</h2>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Night Wave TD -->
+        <div class="project-card">
+          <div class="anchor" id="nightwave"></div>
+          <div class="project-header">
+            <h3 class="project-title">Night Wave Tower Defence</h3>
+            <span class="project-status status-complete">Complete</span>
+          </div>
+          <p class="project-description">
+            A tower defence game inspired by Kingdom Rush, with a unique twist: monsters are obscured by 
+            darkness, requiring players to build illumination towers before defensive towers can target enemies. 
+            Strategic light placement is key to victory.
+          </p>
+          <img src="images/nightwave-screenshot.png" alt="Night Wave Tower Defence gameplay" class="project-image">
+          <div class="project-embed">
+            <iframe src="https://itch.io/embed/3023851?linkback=true&border_width=0&bg_color=0a0a0f&fg_color=e8e8f0&link_color=00d4ff&border_color=363636" width="100%" height="167"></iframe>
+          </div>
+        </div>
 
-  <script>
-    // Script to open and close sidebar
-    var open = false;
-    function openNav() {
-      if (open === true) { this.closeNav(); }
-      else {
-        open = true;
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-      }
-    }
+        <!-- There Be Spikes -->
+        <div class="project-card">
+          <div class="anchor" id="therebespikes"></div>
+          <div class="project-header">
+            <h3 class="project-title">There Be Spikes</h3>
+            <span class="project-status status-complete">Complete</span>
+          </div>
+          <p class="project-description">
+            A 2D precision platformer focused on platforming puzzles and speedrunning. This project served 
+            as a testing ground for refining movement mechanics intended for my upcoming soulsvania project. 
+            I created nearly all assets myself, including art and animations (with the only exceptions being the 
+            fonts and icons for all the button prompts).
+          </p>
+          <img src="images/therebespikes-screenshot.png" alt="There Be Spikes gameplay" class="project-image">
+          <div class="project-embed">
+            <iframe src="https://itch.io/embed/4213428?linkback=true&border_width=0&bg_color=0a0a0f&fg_color=e8e8f0&link_color=00d4ff&border_color=363636" width="100%" height="167"></iframe>
+          </div>
+        </div>
 
-    function closeNav() {
-      open = false;
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("myOverlay").style.display = "none";
-    }
+        <!-- Unamed Dice Rogue-lite -->
+        <div class="project-card">
+          <div class="anchor" id="dice"></div>
+          <div class="project-header">
+            <h3 class="project-title">Unnamed Dice Rogue-lite</h3>
+            <span class="project-status status-progress">Ongoing</span>
+          </div>
+          <p class="project-description">
+            A mix of both 2D and 3D elements, this project is currently in the design phase.
+            The player plays on a 2D hexagonal grid controlling a character with simplified Warhammer-model-esq 
+            stats. Each room is a new encounter and progress routes are procedural, similar to Hades. Along the 
+            way the player will collect dice which serve as the primary mechanic. The dice are the 3D element - 
+            the player has a collection of them that is grown and refined as the game progresses. Dice are assigned 
+            at the start of each turn to movement, defense, or attack. Then rolled to determine the outcome.
+          </p>
+        </div>
 
-  </script>
+        <!-- Soulsvania -->
+        <div class="project-card">
+          <div class="anchor" id="soulsvania"></div>
+          <div class="project-header">
+            <h3 class="project-title">Unnamed Soulsvania Platformer</h3>
+            <span class="project-status status-hold">Design Phase</span>
+          </div>
+          <p class="project-description">
+            A 2D souls-like metroidvania set in a dark fantasy world, inspired by Hollow Knight and 
+            Salt & Sanctuary. This ambitious project combines challenging combat, exploration, and 
+            atmospheric storytelling. Currently on hold while I complete other projects and refine 
+            the core mechanics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Game Jams Section -->
+    <section class="content-section">
+      <div class="category-header">
+        <span class="category-icon">⚡</span>
+        <h2>Game Jams</h2>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Last Light -->
+        <div class="project-card">
+          <div class="anchor" id="lastlight"></div>
+          <div class="project-header">
+            <h3 class="project-title">Last Light</h3>
+            <span class="project-status status-complete">Complete</span>
+          </div>
+          <p class="project-description">
+            My first game jam entry! A 3D first-person horror game where players must escape a maze 
+            inhabited by an angry ghost. Created for the Hawktober Horrors Game Jam in 2025, this 
+            project pushed me to work in 3D and explore atmospheric horror mechanics under tight time constraints.
+          </p>
+          <img src="images/lastlight-screenshot.jpg" alt="Last Light gameplay" class="project-image">
+          <div class="project-embed">
+            <iframe src="https://itch.io/embed/3907764?border_width=0&bg_color=0a0a0f&fg_color=e8e8f0&link_color=00d4ff&border_color=363636" width="100%" height="167"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Tools Section -->
+    <section class="content-section">
+      <div class="category-header">
+        <span class="category-icon">🛠️</span>
+        <h2>Tools & Experiments</h2>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- 40K List Builder -->
+        <div class="project-card">
+          <div class="anchor" id="listbuilder"></div>
+          <div class="project-header">
+            <h3 class="project-title">Warhammer 40K 8th Edition List Builder</h3>
+            <span class="project-status status-hold">Not Active</span>
+          </div>
+          <p class="project-description">
+            A web-based army list builder for Warhammer 40K 8th Edition. Born from frustration with 
+            existing tools, this application streamlines the army building process. Currently supports 
+            Craftworlds, Harlequins, and Ynnari factions. Not active while I'm not actively playing 40K.
+            <br/><br/>
+            I intend to replace this with a more feature-rich and up-to-date version, but I'm not sure 
+            when I'll have the time to do so.
+          </p>
+          <div>
+            <img class="scalingImage" src="images/lb-screen1.jpg" alt="40K List Builder Screenshot" />
+          </div>
+          <a href="https://ficticiousdev.github.io/40kListBuilder/" class="project-link" target="_blank" rel="noopener">
+            Try it on GitHub Pages →
+          </a>
+        </div>
+
+        <!-- CodePen -->
+        <div class="project-card">
+          <div class="anchor" id="codepen"></div>
+          <div class="project-header">
+            <h3 class="project-title">CodePen Experiments</h3>
+            <span class="project-status status-hold">Not Active</span>
+          </div>
+          <p class="project-description">
+            A collection of physics simulations and 2D game mechanics experiments. These pens explore 
+            collision detection, physics resolution, and various game programming challenges. Updated 
+            whenever I'm experimenting with new concepts or techniques within the JavaScript domain.
+          </p>
+          <p data-height="535" data-theme-id="dark" data-slug-hash="JeGWJm" data-default-tab="js,result" 
+             data-user="cp-pens" data-pen-title="2D Physics Module" class="codepen">
+            See the Pen <a href="https://codepen.io/cp-pens/pen/JeGWJm/">2D Physics Module</a> by Connor 
+            (<a href="https://codepen.io/cp-pens">cp-pens</a>) on <a href="https://codepen.io">CodePen</a>.
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <a href="https://codepen.io/cp-pens/" class="project-link" target="_blank" rel="noopener">
+            View CodePen Profile →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Shelved Projects Section -->
+    <section class="content-section">
+      <div class="anchor" id="shelved"></div>
+      <div class="category-header">
+        <span class="category-icon">📦</span>
+        <h2>Shelved Projects</h2>
+      </div>
+      
+      <p style="margin-bottom: var(--spacing-lg);">
+        Every developer has a graveyard of projects that taught valuable lessons. Here are some of mine:
+      </p>
+      
+      <div class="projects-grid">
+        <!-- 2D Game Engine -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">2D Game Engine (JavaScript/TypeScript)</h3>
+            <span class="project-status status-shelved">Shelved</span>
+          </div>
+          <p class="project-description">
+            Built a complete ECS architecture, asset management system, audio manager, and scene manager 
+            from scratch. Started with JavaScript, then migrated to TypeScript. Began developing a custom 
+            WebGL2 renderer but realized I was enjoying engine development more than game development - 
+            which led me to reconsider my priorities.
+          </p>
+        </div>
+
+        <!-- 3D Game Engine -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">3D Game Engine (C++/OpenGL)</h3>
+            <span class="project-status status-shelved">Shelved</span>
+          </div>
+          <p class="project-description">
+            Following The Cherno's excellent YouTube series, I built a 3D game engine using C++ and OpenGL. 
+            While incredibly educational, the scope became too large. I realized that if I wanted to actually 
+            create games before retirement, I should use existing engines rather than building my own.
+          </p>
+        </div>
+
+        <!-- 3D Arena Shooter -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">3D Parkour Arena Shooter</h3>
+            <span class="project-status status-shelved">Shelved</span>
+          </div>
+          <p class="project-description">
+            A parkour-based multiplayer shooter concept developed in Godot. Had some interesting movement 
+            mechanics, but other projects took priority. May revisit the core movement system in future projects.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="theme-toggle.js"></script>
 </body>
 
 </html>
