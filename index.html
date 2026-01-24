@@ -4,10 +4,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of FicticiousDev - Game developer specializing in 2D platformers, tower defense, and indie games using Godot Engine. Explore my completed games, tools, and projects.">
+  <meta name="description" content="Portfolio of FicticiousDev (Connor Patrick) - Game developer specializing in 2D indie games using Godot Engine. Explore my completed games, tools, and projects.">
   <meta name="keywords" content="game development, portfolio, Godot, indie games, 2D platformer, tower defense">
   <meta name="author" content="FicticiousDev">
-  <title>FicticiousDev - Game Developer Portfolio</title>
+  <title>Ficticious - Game Developer Portfolio</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ficticiousdev.github.io/">
+  
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="FicticiousDev">
+  <meta property="og:title" content="FicticiousDev - Game Developer Portfolio">
+  <meta property="og:description" content="Portfolio of FicticiousDev (Connor Patrick) - Game developer specializing in 2D indie games using Godot Engine.">
+  <meta property="og:image" content="https://ficticiousdev.github.io/images/therebespikes-screenshot.png">
+  <meta property="og:url" content="https://ficticiousdev.github.io/">
+  <meta property="og:type" content="website">
+
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "FicticiousDev",
+    "url": "https://ficticiousdev.github.io",
+    "jobTitle": "Game Developer",
+    "knowsAbout": ["Game Development", "Godot", "C#", "C++", "JavaScript", "TypeScript"],
+    "sameAs": [
+      "https://ficticious.itch.io",
+      "https://github.com/FicticiousDev"
+    ]
+  }
+  </script>
   <link href="style.css" rel="stylesheet" />
   <link rel="icon" href="favicon.ico" />
 </head>
@@ -66,6 +95,13 @@
         <a href="#shelved" class="nav-link">Shelved Projects</a>
       </div>
     </div>
+    
+    <div class="nav-section">
+      <div class="nav-title">Resume</div>
+      <div class="nav-links">
+        <a href="#cv" class="nav-link">CV / Resume</a>
+      </div>
+    </div>
   </nav>
 
   <!-- Main Content -->
@@ -89,6 +125,9 @@
           I realized that my true passion lies in designing and creating games rather than engines. This led me to Godot, 
           where I can focus on what matters most: crafting memorable gameplay experiences.
         </p>
+        <div style="text-align: right; margin-top: 20px;">
+          <a href="#cv" class="project-link" style="display: inline-block;">View CV / Resume →</a>
+        </div>
       </div>
     </section>
 
@@ -314,6 +353,108 @@
             mechanics, but other projects took priority. May revisit the core movement system in future projects.
           </p>
         </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- CV Section -->
+    <section class="content-section">
+      <div class="anchor" id="cv"></div>
+      <div class="category-header">
+        <span class="category-icon">📄</span>
+        <h2>Curriculum Vitae</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Experience -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Professional Experience</h3>
+          </div>
+          <div style="margin-bottom: 20px;">
+            <h4 style="margin-bottom: 5px; color: var(--accent-primary);">Senior Software Developer - Game Development</h4>
+            <p style="margin-bottom: 5px; font-weight: 600;">Stormcraft Studios • 2024 - Present</p>
+            <ul style="padding-left: 20px; color: var(--text-secondary);">
+              <li>Front end web-game development with JavaScript</li>
+              <li>Extended and maintained internal engine and tools.</li>
+            </ul>
+          </div>
+          <div style="margin-bottom: 20px;">
+            <h4 style="margin-bottom: 5px; color: var(--accent-primary);">Software Developer - Game Development</h4>
+            <p style="margin-bottom: 5px; font-weight: 600;">Stormcraft Studios • 2017 - 2024</p>
+            <ul style="padding-left: 20px; color: var(--text-secondary);">
+              <li>Front end web-game development with JavaScript</li>
+              <li>Extended and maintained internal engine and tools.</li>
+              <li>Explored back-end service development with C# and .NET</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 5px; color: var(--accent-primary);">Software Developer - Game Development</h4>
+            <p style="margin-bottom: 5px; font-weight: 600;">Derivco • 2015 - 2016</p>
+            <ul style="padding-left: 20px; color: var(--text-secondary);">
+              <li>Front end web-game development with Flash and ActionScript 3.0.</li>
+              <li>Extended and maintained internal engine and tools.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Technical Skills / Experience</h3>
+          </div>
+          
+          <h4 style="margin-bottom: 10px; color: var(--accent-primary);">Game Engines & Frameworks</h4>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+            <span class="project-status status-progress">Godot</span>
+            <span class="project-status status-progress">Unity</span>
+            <span class="project-status status-progress">OpenGL</span>
+          </div>
+
+          <h4 style="margin-bottom: 10px; color: var(--accent-primary);">Languages</h4>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+            <span class="project-status status-progress">C#</span>
+            <span class="project-status status-progress">GDScript</span>
+            <span class="project-status status-progress">C++</span>
+            <span class="project-status status-progress">JavaScript / TS</span>
+            <span class="project-status status-progress">Python</span>
+            <span class="project-status status-progress">ActionScript 3.0</span>
+            <span class="project-status status-progress">Java</span>
+          </div>
+
+          <h4 style="margin-bottom: 10px; color: var(--accent-primary);">Tools</h4>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <span class="project-status status-progress">Git</span>
+            <span class="project-status status-progress">Visual Studio Code</span>
+            <span class="project-status status-progress">Antigravity</span>
+            <span class="project-status status-progress">Visual Studio</span>
+            <span class="project-status status-progress">Webstorm</span>
+            <span class="project-status status-progress">Krita</span>
+            <span class="project-status status-progress">Audacity</span>
+            <span class="project-status status-progress">LMMS</span>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Education</h3>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 5px; color: var(--accent-primary);">BSc Computer Science</h4>
+            <p style="margin-bottom: 5px; font-weight: 600;">University of Cape Town • 2011 - 2014</p>
+            <p class="project-description">
+              Graduated with Honors. Co-majored in Computer Games Design.
+              <br/>
+              <strong>Relevant Coursework:</strong> Data Structures, Algorithms, Game Design Principles and Techniques.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="#" class="project-link" style="display: inline-block;">Download Full Resume (PDF) (Comming Soon)</a>
       </div>
     </section>
   </main>
